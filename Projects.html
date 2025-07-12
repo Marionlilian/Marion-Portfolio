@@ -29,7 +29,7 @@
           .card {
              background-color: black;
              border: 1px solid #ccc;
-             display: inline-block;
+             display: grid;
               width: 250px;
               height: 300px;
               margin-left: 200px;
@@ -42,9 +42,9 @@
           }.card2 {
             background-color: black;
             border: 1px solid #ccc;
-            display: inline-block;
-            width: 250px;
-            height: 300px;
+            display: grid;
+            width: 260px;
+            height: 320px;
             margin-left: 350px;
             margin-top: 0px;
             padding: 1rem;
@@ -52,7 +52,7 @@
           }
           .card1, .card2 {
             /* display: flex; */
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
           }
           .card:hover {
@@ -65,9 +65,9 @@
           .grid-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-gap: 5px;
-            gap: 2px;
+            grid-template-rows: 1fr;
+            grid-gap: 20px;
+            gap: 20px;
             padding: 20px;
           }
     </style>
@@ -90,7 +90,8 @@
     </div>
     <div class="grid-container">
         <div class="card">
-            <div class="card1">
+            <div class="card1"style="grid-template-columns: 1fr;">
+                <img src="Portfolio.png" alt="Portfolio"> <br>
             <img src="Grill-Inn.png" alt="Grill-Inn"> <br>
             <!-- <a href="" target="_blank">View Project</a> -->
              <h2>Grill-Inn</h2>
@@ -98,9 +99,9 @@
              <a href="https://marionlilian.github.io/Grill-Inn/Home.html">Check live site <img src="arrow.jpg" alt="direction" style="width: 20px;height:15px
               ;"></a>
               </div> <br><br>
-              <p>This restaurant website, built with HTML and CSS, features a clean layout showcasing the menu, services, and contact information. It includes a hero section, styled navigation bar, responsive design, and vibrant visuals. The site provides an inviting experience, highlighting dishes and ambiance to attract customers and encourage reservations.</p>
+              <p style="display: grid;">This restaurant website, built with HTML and CSS, features a clean layout showcasing the menu, services, and contact information. It includes a hero section, styled navigation bar, responsive design, and vibrant visuals. The site provides an inviting experience, highlighting dishes and ambiance to attract customers and encourage reservations.</p>
              <!-- AI-driven social media uses artificial intelligence to personalize user experiences, automate content recommendations, analyze trends, and optimize ad targeting. This helps businesses enhance engagement and make data-driven marketing decisions across platforms like Instagram, TikTok, and Facebook. -->
-              <div class="card2" style=" margin-left: 500px;">
+              <div class="card2" style=" margin-left: 500px; grid-template-columns: 1fr;">
                 <!-- <p>AI-driven social media uses artificial intelligence to personalize user experiences, automate content recommendations, analyze trends, and optimize ad targeting. This helps businesses enhance engagement and make data-driven marketing decisions across platforms like Instagram, TikTok, and Facebook.</p> -->
                 <img src="socialmedia.png" alt="social media"> <br>
             <!-- <a href="" target="_blank">View Project</a> -->
@@ -109,6 +110,7 @@
              <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.grandviewresearch.com%2Fblog%2Fai-driven-social-media&psig=AOvVaw224-0MDP3GBtvSg4NfrxaC&ust=1752439398790000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCPCM7c-XuI4DFQAAAAAdAAAAABAE">Check live site <img src="arrow.jpg" alt="direction" style="width: 20px;height:15px
               ;"></a>
               </div>
+              <p>AI-driven social media uses artificial intelligence to personalize user experiences, automate content recommendations, analyze trends, and optimize ad targeting. This helps businesses enhance engagement and make data-driven marketing decisions across platforms like Instagram, TikTok, and Facebook.</p>
         </div>
     </div>
         
