@@ -26,6 +26,50 @@
               color:blanchedalmond;
               padding-right: 10px;
           }
+          .card {
+             background-color: black;
+             border: 1px solid #ccc;
+             display: inline-block;
+              width: 250px;
+              height: 300px;
+              margin-left: 200px;
+              margin-top: 10px;
+              padding: 1rem;
+              color: blanchedalmond;
+              align-items: ;center;
+              transition: transform 0.8s;
+              transform-style: preserve-3d
+          }.card2 {
+            background-color: black;
+            border: 1px solid #ccc;
+            display: inline-block;
+            width: 250px;
+            height: 300px;
+            margin-left: 350px;
+            margin-top: 0px;
+            padding: 1rem;
+            color: blanchedalmond;
+          }
+          .card1, .card2 {
+            /* display: flex; */
+            flex-direction: column;
+            align-items: center;
+          }
+          .card:hover {
+            transform: rotateX(40deg);
+          }
+          img{
+            width: 240px;
+            height: 150px;
+          }
+          .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 5px;
+            gap: 2px;
+            padding: 20px;
+          }
     </style>
 </head>
 <body>
@@ -43,6 +87,32 @@
     <div>
         <h1 style="text-align: center;"><span style="color: antiquewhite;">A Small Selection of</span>
         <span style="color:violet;">recent projects</span></h1>
+    </div>
+    <div class="grid-container">
+        <div class="card">
+            <div class="card1">
+            <img src="Grill-Inn.png" alt="Grill-Inn"> <br>
+            <!-- <a href="" target="_blank">View Project</a> -->
+             <h2>Grill-Inn</h2>
+            <p>A restaurant website (html/CSS)</p>
+             <a href="https://marionlilian.github.io/Grill-Inn/Home.html">Check live site <img src="arrow.jpg" alt="direction" style="width: 20px;height:15px
+              ;"></a>
+              </div> <br><br>
+              <p>This restaurant website, built with HTML and CSS, features a clean layout showcasing the menu, services, and contact information. It includes a hero section, styled navigation bar, responsive design, and vibrant visuals. The site provides an inviting experience, highlighting dishes and ambiance to attract customers and encourage reservations.</p>
+             <!-- AI-driven social media uses artificial intelligence to personalize user experiences, automate content recommendations, analyze trends, and optimize ad targeting. This helps businesses enhance engagement and make data-driven marketing decisions across platforms like Instagram, TikTok, and Facebook. -->
+              <div class="card2" style=" margin-left: 500px;">
+                <!-- <p>AI-driven social media uses artificial intelligence to personalize user experiences, automate content recommendations, analyze trends, and optimize ad targeting. This helps businesses enhance engagement and make data-driven marketing decisions across platforms like Instagram, TikTok, and Facebook.</p> -->
+                <img src="socialmedia.png" alt="social media"> <br>
+            <!-- <a href="" target="_blank">View Project</a> -->
+             <h2>AI Media</h2>
+            <p>A social Media Website powered by AI</p>
+             <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.grandviewresearch.com%2Fblog%2Fai-driven-social-media&psig=AOvVaw224-0MDP3GBtvSg4NfrxaC&ust=1752439398790000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCPCM7c-XuI4DFQAAAAAdAAAAABAE">Check live site <img src="arrow.jpg" alt="direction" style="width: 20px;height:15px
+              ;"></a>
+              </div>
+        </div>
+    </div>
+        
+
     </div>
 </body>
 </html>
