@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <style>
+         body{
+              margin:0;
+              padding:0;
+              /* background-image: url(Canvaback.png); */
+             /* align-items: center; */
+             background-color: black;
+          nav {
+          display: flex;
+          justify-content: space-between;
+          padding:1rem;
+
+          }
+          h3{
+              color: blanchedalmond ;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              
+          }
+          a {
+              text-decoration: none;
+              color:blanchedalmond;
+              padding-right: 10px;
+          }
+          .grid-container {
+            grid-template-columns: repeat(2, 1fr);
+              display: grid;
+              padding: 20px;
+              color: oldlace;
+          }
+          #myVideo {
+             position: fixed;
+             right: 0;
+             bottom: 0;
+             min-width: 100%;
+             min-height: 100%;
+          }
+          .content {
+           position: relative;
+           width: 100%;
+           height: 100vh; /* Full screen */
+           overflow: hidden;
+}
+    </style>
+</head>
+<body>
+      <video autoplay muted loop id="myVideo">
+            <source src="Neon.mp4" type="video/mp4"></video>
+     <div class="content">
+     <nav>
+      <div>
+        <h3>MARION LILIAN._</h3>
+      </div>
+      <div>
+        <a href="Home.html">// Home</a>
+        <a href="Projects.html">// projects</a>
+        <a href="Expertise.html">// expertise</a>
+        <a href="Contact.html"> // Contact</a>
+      </div>
+    </nav>
+   
+    <div class="grid-container">
+        <div class="grid-items1">
+        <h1 style="text-align: center; padding-top: 0;margin-top: 0;">
+            Available for select freelance opportunities
+        </h1>
+        <p style="text-align: center; font-size: 18px;">Have an exciting project you need help with?</p>
+        <p style="text-align: center; font-size: 18px;">Send me an email or contact me via instant message!</p> <br>
+        <p style="text-align: center;"><b>marion@mlilian.dev</b></p>
+        <p style="text-align: center;"><b>Messenger</b></p>
+        <p style="text-align: center;"><b>LinkedIn</b></p>
+        <p style="text-align: center;"><b>GitHub</b></p>
+        
+</div>
+<div class="grid-items2" style="text-align: center; font-size: 18px;">
+        <p><b>Let's work together to bring your project to life!</b></p>
+            <form action=""></form> 
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" style="width: 200px; height: 30px;"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" style="width: 200px; height: 30px;"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" style="width: 350px;height: 50px;"></textarea><br><br>
+            <input type="submit" value="Send" style="width: 80px;height: 30px;">
+        </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
